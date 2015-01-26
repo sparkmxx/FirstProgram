@@ -1,0 +1,4 @@
+E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Model\bin\Debug\RedNoble.Starmao.Model.dll
+E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Model\bin\Debug\RedNoble.Starmao.Model.pdb
+E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Model\obj\Debug\RedNoble.Starmao.Model.dll
+E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Model\obj\Debug\RedNoble.Starmao.Model.pdb

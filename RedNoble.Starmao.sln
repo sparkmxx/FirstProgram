@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedNoble.Starmao.Web", "RedNoble.Starmao.Web\RedNoble.Starmao.Web.csproj", "{FD945D99-3561-40AD-91DE-44A6DD0F90D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedNoble.Starmao.MyBatis", "RedNoble.Starmao.MyBatis\RedNoble.Starmao.MyBatis.csproj", "{C39D2A88-B7AD-4CAF-BD42-2DB32F95EE05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedNoble.Starmao.TestMyBatis", "RedNoble.Starmao.TestMyBatis\RedNoble.Starmao.TestMyBatis.csproj", "{6F304CB1-48E3-4EAA-999D-8CA866B4ACD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedNoble.Starmao.Model", "RedNoble.Starmao.Model\RedNoble.Starmao.Model.csproj", "{B2C188A7-A5B7-4B21-9CCE-E978F50509AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedNoble.Starmao.FrontWeb", "RedNoble.Starmao.FrontWeb\RedNoble.Starmao.FrontWeb.csproj", "{61EEFCF1-B6CE-4A3E-B692-F199D3EE92B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedNoble.Starmao.DesginPattern", "RedNoble.Starmao.DesginPattern\RedNoble.Starmao.DesginPattern.csproj", "{523C8E64-94C9-4159-8020-FF5805E2AA8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD945D99-3561-40AD-91DE-44A6DD0F90D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD945D99-3561-40AD-91DE-44A6DD0F90D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD945D99-3561-40AD-91DE-44A6DD0F90D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD945D99-3561-40AD-91DE-44A6DD0F90D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C39D2A88-B7AD-4CAF-BD42-2DB32F95EE05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C39D2A88-B7AD-4CAF-BD42-2DB32F95EE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C39D2A88-B7AD-4CAF-BD42-2DB32F95EE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C39D2A88-B7AD-4CAF-BD42-2DB32F95EE05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F304CB1-48E3-4EAA-999D-8CA866B4ACD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F304CB1-48E3-4EAA-999D-8CA866B4ACD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F304CB1-48E3-4EAA-999D-8CA866B4ACD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F304CB1-48E3-4EAA-999D-8CA866B4ACD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C188A7-A5B7-4B21-9CCE-E978F50509AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C188A7-A5B7-4B21-9CCE-E978F50509AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C188A7-A5B7-4B21-9CCE-E978F50509AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C188A7-A5B7-4B21-9CCE-E978F50509AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61EEFCF1-B6CE-4A3E-B692-F199D3EE92B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61EEFCF1-B6CE-4A3E-B692-F199D3EE92B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61EEFCF1-B6CE-4A3E-B692-F199D3EE92B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61EEFCF1-B6CE-4A3E-B692-F199D3EE92B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{523C8E64-94C9-4159-8020-FF5805E2AA8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{523C8E64-94C9-4159-8020-FF5805E2AA8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{523C8E64-94C9-4159-8020-FF5805E2AA8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{523C8E64-94C9-4159-8020-FF5805E2AA8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

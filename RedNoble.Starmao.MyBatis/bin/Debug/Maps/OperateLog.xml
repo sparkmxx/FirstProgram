@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sqlMap namespace="Account" 
+xmlns="http://ibatis.apache.org/mapping" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+
+	<alias>
+		<typeAlias alias="OperateLog" type="RedNoble.Starmao.Model.OperateLog, RedNoble.Starmao.Model"/>
+  </alias>
+
+  <resultMaps>
+    <resultMap class="OperateLog" id="OperateLog_Result">
+      <result column="Id" property="Id" />
+      <result column="ActionName" property="ActionName" />
+      <result column="OperateTypeNum" property="OperateTypeNum" />
+      <result column="AddDate" property="AddDate" />
+      <result column="SortRank" property="SortRank" />
+      <result column="IsDelete" property="IsDelete" />
+    </resultMap>
+  </resultMaps>
+  <statements>
+    <insert id="OperateLog_Insert" parameterClass="OperateLog" resultClass="int">
+      <selectKey property="Id" type="post" resultClass="int">
+        ${selectKey}
+      </selectKey>
+      INSERT INTO [dbo].[OperateLog] ([ActionName],[OperateTypeNum],[AddDate],[SortRank],[IsDelete])
+      VALUES (#ActionName#,#OperateTypeNum#,#AddDate#,#SortRank#,#IsDelete#)
+    </insert>
+    <update id="OperateLog_Update" parameterClass="OperateLog">
+      UPDATE [dbo].[OperateLog] SET [ActionName] = #ActionName#,[OperateTypeNum] = #OperateTypeNum#,[AddDate] = #AddDate#,[SortRank] = #SortRank#,[IsDelete] = #IsDelete#
+      WHERE [Id] = #Id#
+    </update>
+    <insert id="OperateLog_InsertUpdate" parameterClass="OperateLog">
+      IF EXISTS(SELECT [Id] FROM [dbo].[OperateLog] WHERE [Id] = #Id#)
+      BEGIN
+      UPDATE [dbo].[OperateLog] SET [ActionName] = #ActionName#,[OperateTypeNum] = #OperateTypeNum#,[AddDate] = #AddDate#,[SortRank] = #SortRank#,[IsDelete] = #IsDelete#
+      WHERE [Id] = #Id#
+      END
+      ELSE
+      BEGIN
+      INSERT INTO [dbo].[OperateLog] ([Id],[ActionName],[OperateTypeNum],[AddDate],[SortRank],[IsDelete])
+      VALUES (#Id#,#ActionName#,#OperateTypeNum#,#AddDate#,#SortRank#,#IsDelete#)
+      END
+    </insert>
+    <delete id="OperateLog_Delete" parameterClass="OperateLog">
+      DELETE FROM [dbo].[OperateLog] WHERE [Id] = #Id#
+    </delete>
+    <select id="OperateLog_Select"  resultMap="OperateLog_Result" >
+      SELECT [Id],[ActionName],[OperateTypeNum],[AddDate],[SortRank],[IsDelete] FROM [dbo].[OperateLog]
+      WHERE [Id] = #Id#
+    </select>
+    <select id="OperateLog_SelectAll"  resultMap="OperateLog_Result" >
+      SELECT [Id],[ActionName],[OperateTypeNum],[AddDate],[SortRank],[IsDelete]
+      FROM [dbo].[OperateLog]
+    </select>
+    <select id="DataSetSample" parameterClass="Hashtable">
+      SELECT [Id],[ActionName],[OperateTypeNum],[AddDate],[SortRank],[IsDelete]
+      FROM [dbo].[OperateLog] 
+      SELECT [OfficeId]
+      ,[OfficeCode]
+      ,[OfficeName]
+      FROM [dbo].[Office]
+    </select>
+    <statement id="ExcuteSqlSample" parameterClass="Hashtable">
+      DELETE [OperateLog] WHERE Id= #Id#
+      DELETE [Office] WHERE OfficeId= #OfficeId#
+    </statement>
+    <procedure id="ProcedureSample" parameterMap="SelectOperateLogById-params">
+      SelectOperateLogById
+    </procedure>
+  </statements>
+
+  <parameterMaps>
+    <parameterMap id="SelectOperateLogById-params" class="Hashtable">
+      <parameter property="Id" column="Id" dbType="Int" />
+    </parameterMap>
+  </parameterMaps>
+</sqlMap>

@@ -1,0 +1,5 @@
+E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Model\bin\Release\RedNoble.Starmao.Model.dll
+E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Model\bin\Release\RedNoble.Starmao.Model.pdb
+E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Model\obj\Release\RedNoble.Starmao.Model.csprojResolveAssemblyReference.cache
+E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Model\obj\Release\RedNoble.Starmao.Model.dll
+E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Model\obj\Release\RedNoble.Starmao.Model.pdb
