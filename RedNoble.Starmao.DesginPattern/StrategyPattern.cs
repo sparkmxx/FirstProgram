@@ -4,11 +4,18 @@ using NUnit.Framework;
 
 namespace RedNoble.Starmao.DesginPattern
 {
+    /// <summary>
+    /// 收费算法接口
+    /// </summary>
     public interface IChargeBehavior
     {
         string CustomerCharge(decimal money);
+       
     }
 
+    /// <summary>
+    /// 正常收费算法
+    /// </summary>
     public class NormalChargeBehavior : IChargeBehavior
     {
         public string CustomerCharge(decimal money)
@@ -16,7 +23,9 @@ namespace RedNoble.Starmao.DesginPattern
             return string.Format("原价：{0},实际收费：{1}", money, money);
         }
     }
-
+    /// <summary>
+    /// VIP收费算法
+    /// </summary>
     public class VipChargeBehavior : IChargeBehavior
     {
         public string CustomerCharge(decimal money)
@@ -36,6 +45,10 @@ namespace RedNoble.Starmao.DesginPattern
             Console.WriteLine(ChargeBehavior.CustomerCharge(money));
         }
 
+        /// <summary>
+        /// 设置对应的收费算法
+        /// </summary>
+        /// <param name="chargeBehavior"></param>
         public void SetChargeBehavior(IChargeBehavior chargeBehavior)
         {
             ChargeBehavior = chargeBehavior;
