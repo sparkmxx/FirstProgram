@@ -1,9 +1,0 @@
-E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Study\RedNoble.Starmao.Study.Configuration\bin\Debug\App.config
-E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Study\RedNoble.Starmao.Study.Configuration\bin\Debug\RedNoble.Starmao.Study.Configuration.dll.config
-E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Study\RedNoble.Starmao.Study.Configuration\bin\Debug\RedNoble.Starmao.Study.Configuration.dll
-E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Study\RedNoble.Starmao.Study.Configuration\bin\Debug\RedNoble.Starmao.Study.Configuration.pdb
-E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Study\RedNoble.Starmao.Study.Configuration\bin\Debug\nunit.framework.dll
-E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Study\RedNoble.Starmao.Study.Configuration\bin\Debug\nunit.framework.xml
-E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Study\RedNoble.Starmao.Study.Configuration\obj\Debug\RedNoble.Starmao.Study.Configuration.csprojResolveAssemblyReference.cache
-E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Study\RedNoble.Starmao.Study.Configuration\obj\Debug\RedNoble.Starmao.Study.Configuration.dll
-E:\MyProject\RedNoble.Starmao\RedNoble.Starmao.Study\RedNoble.Starmao.Study.Configuration\obj\Debug\RedNoble.Starmao.Study.Configuration.pdb
