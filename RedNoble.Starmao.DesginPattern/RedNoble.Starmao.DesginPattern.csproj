@@ -42,9 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactoryPattern.cs" />
+    <Compile Include="AdapterPattern.cs" />
+    <Compile Include="CommandPattern.cs" />
+    <Compile Include="DecoratorPattern.cs" />
+    <Compile Include="FactoryPattern.cs" />
     <Compile Include="ObserverPattern.cs" />
     <Compile Include="ObserverPattern2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleFactory.cs" />
+    <Compile Include="SingletonPattern.cs" />
     <Compile Include="StrategyPattern.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

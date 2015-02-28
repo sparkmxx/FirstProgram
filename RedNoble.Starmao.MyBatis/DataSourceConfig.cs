@@ -24,21 +24,25 @@ namespace RedNoble.Starmao.MyBatis
 
         public static DataSourceConfig GetInstance()
         {
-            lock (LockObj)
+            if (_dataSourceConfig == null)
             {
-                if (_dataSourceConfig == null)
+                lock (LockObj)
                 {
-                    _dataSourceConfig = new DataSourceConfig();
+                    if (_dataSourceConfig == null)
+                    {
+                        _dataSourceConfig = new DataSourceConfig();
 
-                    #region 初始化其他变量
-                    IConfigurationEngine engine = new DefaultConfigurationEngine();
-                    engine.RegisterInterpreter(new XmlConfigurationInterpreter("SqlMap.config"));
-                    IMapperFactory mapperFactory = engine.BuildMapperFactory();
-                    _dataSourceConfig._sessionFactory = engine.ModelStore.SessionFactory;
-                    _dataSourceConfig._dataMapper = ((IDataMapperAccessor)mapperFactory).DataMapper; 
-                    #endregion
+                        #region 初始化其他变量
+                        IConfigurationEngine engine = new DefaultConfigurationEngine();
+                        engine.RegisterInterpreter(new XmlConfigurationInterpreter("SqlMap.config"));
+                        IMapperFactory mapperFactory = engine.BuildMapperFactory();
+                        _dataSourceConfig._sessionFactory = engine.ModelStore.SessionFactory;
+                        _dataSourceConfig._dataMapper = ((IDataMapperAccessor)mapperFactory).DataMapper;
+                        #endregion
+                    }
                 }
             }
+           
             return _dataSourceConfig;
         }
 

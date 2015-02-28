@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using NUnit.Framework;
 using RedNoble.Starmao.Model;
 using RedNoble.Starmao.MyBatis.Dao;
@@ -116,6 +117,7 @@ namespace RedNoble.Starmao.TestMyBatis
         public void TestTrunsaction2()
         {
             //_iOperateLogDao();
+            
         }
     }
 }
